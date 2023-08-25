@@ -9,6 +9,8 @@ import useWishlistQuery from "../../hooks/useWishlistQuery";
 import useDeleteWishlistMutation from "../../hooks/useDeleteWishlistMutation";
 import useAddWishlistMutation from "../../hooks/useAddWishlistMutation";
 import Spinner from "/spinner.svg";
+import { useIsImgLoaded } from "../../hooks/useIsImgLoaded";
+import Thumbnail from "./Thumbnail";
 
 interface ProductProps {
   product: ProductType; // 부모 컴포넌트에서 import한 타입
@@ -113,6 +115,7 @@ const Product = () => {
               productName,
               productPrice,
               thumbnail,
+              lazy,
             },
             index,
           ) => (
@@ -122,7 +125,12 @@ const Product = () => {
               key={index}
             >
               <Item>
-                <img className="image" src={thumbnail} alt={productName} />
+                <Thumbnail
+                  productName={productName}
+                  thumbnail={thumbnail}
+                  lazy={lazy}
+                />
+                {/* <img className="image" src={thumbnail} alt={productName} /> */}
                 {token ? (
                   <AiFillHeart
                     className={

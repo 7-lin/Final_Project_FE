@@ -78,6 +78,7 @@ export const itemState = atom({
       productName: "중앙아시아 3국 15일",
       productPrice: 5790000,
       thumbnail: "https://cdn.imweb.me/thumbnail/20220330/ea0dbb6095678.png",
+      lazy: true,
     },
     {
       briefExplanation:
@@ -87,6 +88,7 @@ export const itemState = atom({
       productName: "스페인 산티아고 순례길 하이라이트 17일",
       productPrice: 5290000,
       thumbnail: "https://cdn.imweb.me/thumbnail/20220804/b2c35e3dc9f22.jpg",
+      lazy: true,
     },
     {
       briefExplanation:
@@ -96,6 +98,7 @@ export const itemState = atom({
       productName: "누구나 가능한 이지워킹 스위스 알프스 초급 트레킹 10일",
       productPrice: 4990000,
       thumbnail: "https://cdn.imweb.me/thumbnail/20220830/6d1a7d5c70594.jpg",
+      lazy: true,
     },
     {
       briefExplanation:
@@ -105,6 +108,7 @@ export const itemState = atom({
       productName: "코카서스 12일 풀패키지 ",
       productPrice: 5590000,
       thumbnail: "https://cdn.imweb.me/thumbnail/20220507/59b9d6e747e98.png",
+      lazy: true,
     },
     {
       briefExplanation:
@@ -114,6 +118,7 @@ export const itemState = atom({
       productName: "와인러버들끼리 코카서스 3국 일주 18일  ",
       productPrice: 6390000,
       thumbnail: "https://cdn.imweb.me/thumbnail/20220330/1242df3a189a7.png",
+      lazy: true,
     },
   ],
 });

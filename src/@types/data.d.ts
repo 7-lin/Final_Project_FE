@@ -128,6 +128,8 @@ export interface ProductType {
   productName: string;
   productPrice: number;
   thumbnail: string;
+  /** lazy loading 여부 */
+  lazy: boolean;
 }
 
 // 상품 상세 조회 response
